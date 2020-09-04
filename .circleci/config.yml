@@ -1,9 +1,10 @@
 version: 2.1
 jobs:
   build:
+    # working_directory: ~/mern-starter
     docker:
       - image: circleci/node:14.9.0
+      - image: mongo:4.2.0
     steps:
       - checkout
-      - run: echo "in Branch..."
       - run: echo "Finish build!"
