@@ -5,4 +5,5 @@ jobs:
       - image: circleci/node:14.9.0
     steps:
       - checkout
+      - run: echo "in Branch..."
       - run: echo "Finish build!"
